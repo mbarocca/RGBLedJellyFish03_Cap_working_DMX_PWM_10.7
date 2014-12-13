@@ -135,7 +135,7 @@ int capSense(){
   touched = cap.touched();            // poll sensor for value
   
   for( int i = 0; i <8 ; i++){
-    if(touched >= 2^i && > 2^(i+1){
+    if(touched >= 2^i && touched < 2^(i+1){
       selectedKey = i}
   }
   /*
