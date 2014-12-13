@@ -132,7 +132,14 @@ if(selectedKey != currentColor){
 }
     
 int capSense(){
-  touched = cap.touched();
+  touched = cap.touched();            // poll sensor for value
+  
+  for( int i = 0; i <8 ; i++){
+    if(touched >= 2^i && touched < 2^(i+1){
+      selectedKey = i;
+    }
+  }
+  /*
   if(touched >= 1 && touched < 2){
     selectedKey = 0;
   }if(touched >= 2 && touched < 4){   
@@ -149,7 +156,7 @@ int capSense(){
       selectedKey = 6;
   }if(touched >= 128 && touched < 255){   
       selectedKey = 7;
-  }
+  }*/
   pwm.setPWM(selectedKey,0,1000);
   return selectedKey;                
 }
