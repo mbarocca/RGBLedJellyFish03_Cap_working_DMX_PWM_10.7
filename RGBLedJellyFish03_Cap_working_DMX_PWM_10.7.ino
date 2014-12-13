@@ -134,28 +134,20 @@ if(selectedKey != currentColor){
 int capSense(){
   touched = cap.touched();
   if(touched >= 1 && touched < 2){
-    // // // Serial.println("1");
     selectedKey = 0;
-  }if(touched >= 2 && touched < 4){
-    // // // Serial.println("2");
+  }if(touched >= 2 && touched < 4){   
       selectedKey = 1;
-  }if(touched >= 4 && touched < 8){
-    // // Serial.println("3");
+  }if(touched >= 4 && touched < 8){   
       selectedKey = 2;
-  }if(touched >= 8 && touched < 16){
-    // // Serial.println("4");
+  }if(touched >= 8 && touched < 16){    
       selectedKey = 3;
-  }if(touched >= 16 && touched < 32){
-    // // Serial.println("5");
+  }if(touched >= 16 && touched < 32){   
       selectedKey = 4;
-  }if(touched >= 32 && touched < 64){
-    // // Serial.println("6");
+  }if(touched >= 32 && touched < 64){    
       selectedKey = 5;
-  }if(touched >= 64 && touched < 128){
-    // // Serial.println("7");
+  }if(touched >= 64 && touched < 128){   
       selectedKey = 6;
-  }if(touched >= 128 && touched < 255){
-    // // Serial.println("8");
+  }if(touched >= 128 && touched < 255){   
       selectedKey = 7;
   }
   pwm.setPWM(selectedKey,0,1000);
