@@ -2,8 +2,7 @@
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 
-//  HI MATT HERE IS MY CHANGE
-
+//  Removed Change
 
 #include <Wire.h>
 #include <SPI.h>
