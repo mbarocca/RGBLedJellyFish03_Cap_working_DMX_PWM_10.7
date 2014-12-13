@@ -136,7 +136,8 @@ int capSense(){
   
   for( int i = 0; i <8 ; i++){
     if(touched >= 2^i && touched < 2^(i+1){
-      selectedKey = i}
+      selectedKey = i;
+    }
   }
   /*
   if(touched >= 1 && touched < 2){
